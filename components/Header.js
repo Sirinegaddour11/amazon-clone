@@ -1,11 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Image from "next/image";
-import {
-  MenuIcon,
-  SearchIcon,
-  ShoppingCartIcon,
-} from "@heroicons/react/outline";
-
+import MenuIcon from "@heroicons/react/outline/MenuIcon";
+import SearchIcon from "@heroicons/react/outline/SearchIcon";
+import ShoppingCartIcon from "@heroicons/react/outline/ShoppingCartIcon";
 import React from "react";
 
 function Header() {
@@ -62,7 +59,7 @@ function Header() {
         </p>
         <p className="link">Prime Video</p>
         <p className="link">Amazon Business</p>
-
+        <p className="link">Today s Deals</p>
         <p className="link hidden lg:inline-flex">Electronics</p>
         <p className="link hidden lg:inline-flex">Foods & Grocery</p>
         <p className="link hidden lg:inline-flex">Prime</p>
