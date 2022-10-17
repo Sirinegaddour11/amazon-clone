@@ -11,22 +11,20 @@ import {
   removeItems,
 } from "../slices/basketSlice";
 function CheckoutProduct({ product }) {
+
   const dispatch = useDispatch();
-  const {
-    id,
-    title,
-    price,
-    rating,
-    description,
-    category,
-    image,
-    hasPrime,
-    quantity,
-  } = product;
-
-
-  
+const     id,
+      title,
+      price,
+      rating,
+      description,
+      category,
+      image,
+      hasPrime,
+      quantity,
+    };
   const addItemToBasket = (product) => {
+  
     // Push item into redux
     dispatch(addToBasket(product));
   };
@@ -73,7 +71,7 @@ function CheckoutProduct({ product }) {
           <div className="p-2 whitespace-normal sm:p-1 sm:whitespace-nowrap">
             Quantity: <span className="font-bold">{quantity}</span>
           </div>
-          <button className="button " onClick={()=>addItemToBasket(product)}>
+          <button className="button " onClick={addItemToBasket}>
             +
           </button>
         </div>

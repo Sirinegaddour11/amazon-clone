@@ -50,8 +50,11 @@ function checkout() {
                 ? "Your Amazon Basket is empty."
                 : "Shopping Basket"}
             </h1>
-            {items.map((product, i) => (
-              <CheckoutProduct key={i} product={product} />
+            {items.map((item, i) => (
+              <CheckoutProduct
+                key={i}
+               product=
+              />
             ))}
           </div>
         </div>

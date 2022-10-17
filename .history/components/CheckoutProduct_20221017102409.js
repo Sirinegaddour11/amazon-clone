@@ -10,30 +10,31 @@ import {
   removeFromBasket,
   removeItems,
 } from "../slices/basketSlice";
-function CheckoutProduct({ product }) {
+function CheckoutProduct({
+  product
+}) {
   const dispatch = useDispatch();
-  const {
-    id,
-    title,
-    price,
-    rating,
-    description,
-    category,
-    image,
-    hasPrime,
-    quantity,
-  } = product;
 
 
-  
-  const addItemToBasket = (product) => {
+  const addItemToBasket = () => {
+    const product = {
+      id,
+      title,
+      price,
+      rating,
+      description,
+      category,
+      image,
+      hasPrime,
+      quantity,
+    };
     // Push item into redux
     dispatch(addToBasket(product));
   };
 
   const removeItemFromBasket = (id) => {
     // Remove item from redux
-    dispatch(removeFromBasket(id));
+    dispatch(removeFromBasket( id ));
   };
 
   return (
@@ -73,7 +74,7 @@ function CheckoutProduct({ product }) {
           <div className="p-2 whitespace-normal sm:p-1 sm:whitespace-nowrap">
             Quantity: <span className="font-bold">{quantity}</span>
           </div>
-          <button className="button " onClick={()=>addItemToBasket(product)}>
+          <button className="button " onClick={addItemToBasket}>
             +
           </button>
         </div>

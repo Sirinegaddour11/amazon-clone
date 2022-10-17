@@ -23,9 +23,6 @@ function CheckoutProduct({ product }) {
     hasPrime,
     quantity,
   } = product;
-
-
-  
   const addItemToBasket = (product) => {
     // Push item into redux
     dispatch(addToBasket(product));
@@ -73,7 +70,7 @@ function CheckoutProduct({ product }) {
           <div className="p-2 whitespace-normal sm:p-1 sm:whitespace-nowrap">
             Quantity: <span className="font-bold">{quantity}</span>
           </div>
-          <button className="button " onClick={()=>addItemToBasket(product)}>
+          <button className="button " onClick={addItemToBasket}>
             +
           </button>
         </div>

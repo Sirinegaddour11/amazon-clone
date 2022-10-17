@@ -45,31 +45,37 @@ export const basketSlice = createSlice({
       let itemToRemoveId = action.payload;
       let pos = currentBasket.findIndex((item) => item.id === itemToRemoveId);
       console.log("pos=", pos);
-
+     
+     
       if (pos > -1) {
-        let itemToDelete = currentBasket[pos];
+        
+         let itemToDelete = currentBasket[pos];
         if (itemToDelete.quantity === 1) {
           currentBasket.splice(pos, 1);
           console.log("new basket = ", currentBasket);
-        } else if (itemToDelete.quantity > 1) {
+        } else  if (itemToDelete.quantity > 1) {
           // TODO fix >1  <1
           currentBasket[pos].quantity -= 1;
-        } else {
-          console.warn(
-            `quanity of the  product (id: ${itemToRemove.id})in the basket is negative`
-          );
         }
-        state.items = currentBasket;
+        else{
+          
+        }
+         state.items = currentBasket;
       } else {
         console.warn(
           `Can't remove product (id: ${itemToRemove.id}) as its not in the basket`
         );
       }
+       
+       
     },
+
+  
   },
 });
 
-export const { addToBasket, removeFromBasket } = basketSlice.actions;
+export const { addToBasket, removeFromBasket } =
+  basketSlice.actions;
 
 // Selectors - This is how we pull information from the Global store slice
 

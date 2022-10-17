@@ -10,30 +10,39 @@ import {
   removeFromBasket,
   removeItems,
 } from "../slices/basketSlice";
-function CheckoutProduct({ product }) {
+function CheckoutProduct({
+  id,
+  title,
+  price,
+  rating,
+  description,
+  category,
+  image,
+  hasPrime,
+  quantity,
+}) {
   const dispatch = useDispatch();
-  const {
-    id,
-    title,
-    price,
-    rating,
-    description,
-    category,
-    image,
-    hasPrime,
-    quantity,
-  } = product;
 
 
-  
-  const addItemToBasket = (product) => {
+  const addItemToBasket = () => {
+    const product = {
+      id,
+      title,
+      price,
+      rating,
+      description,
+      category,
+      image,
+      hasPrime,
+      quantity,
+    };
     // Push item into redux
     dispatch(addToBasket(product));
   };
 
   const removeItemFromBasket = (id) => {
     // Remove item from redux
-    dispatch(removeFromBasket(id));
+    dispatch(removeFromBasket( id ));
   };
 
   return (
@@ -67,13 +76,13 @@ function CheckoutProduct({ product }) {
       {/* Rigth buttons */}
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
         <div className="flex justify-between xs:justify-start">
-          <button className="button " onClick={() => removeItemFromBasket(id)}>
+          <button className="button " onClick={(removeItemFromBasket}>
             -
           </button>
           <div className="p-2 whitespace-normal sm:p-1 sm:whitespace-nowrap">
             Quantity: <span className="font-bold">{quantity}</span>
           </div>
-          <button className="button " onClick={()=>addItemToBasket(product)}>
+          <button className="button " onClick={addItemToBasket}>
             +
           </button>
         </div>

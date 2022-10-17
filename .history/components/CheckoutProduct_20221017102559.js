@@ -23,9 +23,6 @@ function CheckoutProduct({ product }) {
     hasPrime,
     quantity,
   } = product;
-
-
-  
   const addItemToBasket = (product) => {
     // Push item into redux
     dispatch(addToBasket(product));

@@ -23,9 +23,6 @@ function CheckoutProduct({ product }) {
     hasPrime,
     quantity,
   } = product;
-
-
-  
   const addItemToBasket = (product) => {
     // Push item into redux
     dispatch(addToBasket(product));
@@ -67,13 +64,13 @@ function CheckoutProduct({ product }) {
       {/* Rigth buttons */}
       <div className="flex flex-col space-y-2 my-auto justify-self-end">
         <div className="flex justify-between xs:justify-start">
-          <button className="button " onClick={() => removeItemFromBasket(id)}>
+          <button className="button " onClick={() => removeItemFromBasket(proid)}>
             -
           </button>
           <div className="p-2 whitespace-normal sm:p-1 sm:whitespace-nowrap">
             Quantity: <span className="font-bold">{quantity}</span>
           </div>
-          <button className="button " onClick={()=>addItemToBasket(product)}>
+          <button className="button " onClick={addItemToBasket}>
             +
           </button>
         </div>

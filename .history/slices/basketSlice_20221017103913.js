@@ -50,16 +50,12 @@ export const basketSlice = createSlice({
         let itemToDelete = currentBasket[pos];
         if (itemToDelete.quantity === 1) {
           currentBasket.splice(pos, 1);
+          state.items = currentBasket;
           console.log("new basket = ", currentBasket);
-        } else if (itemToDelete.quantity > 1) {
-          // TODO fix >1  <1
-          currentBasket[pos].quantity -= 1;
         } else {
-          console.warn(
-            `quanity of the  product (id: ${itemToRemove.id})in the basket is negative`
-          );
+          itemToDelete.quantity -= 1;
+          state.items = [...state.items, itemToDelete];
         }
-        state.items = currentBasket;
       } else {
         console.warn(
           `Can't remove product (id: ${itemToRemove.id}) as its not in the basket`
