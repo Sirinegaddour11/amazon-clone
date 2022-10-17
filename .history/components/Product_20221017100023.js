@@ -32,7 +32,7 @@ function Product({ id, title, price, description, category, image }) {
     };
 
     dispatch(addToBasket(Product));
-
+   14/10
   };
 
   return (
