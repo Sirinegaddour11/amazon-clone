@@ -124,11 +124,11 @@ function Header() {
             </div>
           </div>
           <div className="drop  ">
-            <div className="flex relative ">
+            <div className="flex ">
               <div className="cursor-pointer ">
                 Amazon Business
                 <i class="arrow down "></i>
-                <div className="a "></div>
+                <div className="a"></div>
               </div>
             </div>
 
@@ -141,11 +141,10 @@ function Header() {
             </div>
           </div>
           <div className="drop  ">
-            <div className="flex relative">
+            <div className="flex ">
               <div className="cursor-pointer ">
                 Today s Deals
                 <i class="arrow down "></i>
-                <div className="a"></div>
               </div>
             </div>
 

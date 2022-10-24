@@ -123,8 +123,8 @@ function Header() {
               <MenuCarousel />
             </div>
           </div>
-          <div className="drop  ">
-            <div className="flex relative ">
+          <div className="drop relative  ">
+            <div className="flex  ">
               <div className="cursor-pointer ">
                 Amazon Business
                 <i class="arrow down "></i>

@@ -133,15 +133,14 @@ content: " ";
 }
 /* dropdown-content after */
 .a {
-        content: " ";
+    content: " ";
         position: absolute;
-        bottom: 0;
+        top: 0;
+        bottom: 0.5%;
         right: 50%;
-        margin-left: -8px;
-        border-width: 8px;
+        border-width: 9px;
         border-color: transparent transparent rgb(0, 0, 0) transparent;
         z-index: 4;
-        
 
 }
 

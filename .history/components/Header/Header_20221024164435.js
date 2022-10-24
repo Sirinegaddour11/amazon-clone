@@ -124,7 +124,7 @@ function Header() {
             </div>
           </div>
           <div className="drop  ">
-            <div className="flex relative ">
+            <div className="flex  ">
               <div className="cursor-pointer ">
                 Amazon Business
                 <i class="arrow down "></i>

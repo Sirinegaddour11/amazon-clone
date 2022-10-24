@@ -112,7 +112,7 @@ function Header() {
               <div className="cursor-pointer">
                 Prime Video
                 <i class="arrow down "></i>
-                <div className="a"></div>
+              <div className="a"></div>
               </div>
             </div>
 
@@ -124,12 +124,11 @@ function Header() {
             </div>
           </div>
           <div className="drop  ">
-            <div className="flex relative ">
-              <div className="cursor-pointer ">
+            <div className="flex ">
+              <p className="cursor-pointer ">
                 Amazon Business
                 <i class="arrow down "></i>
-                <div className="a "></div>
-              </div>
+              </p>
             </div>
 
             <div className="drop-content ">
@@ -141,12 +140,11 @@ function Header() {
             </div>
           </div>
           <div className="drop  ">
-            <div className="flex relative">
-              <div className="cursor-pointer ">
+            <div className="flex ">
+              <p className="cursor-pointer ">
                 Today s Deals
                 <i class="arrow down "></i>
-                <div className="a"></div>
-              </div>
+              </p>
             </div>
 
             <div className="drop-content ">

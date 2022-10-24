@@ -128,7 +128,7 @@ function Header() {
               <div className="cursor-pointer ">
                 Amazon Business
                 <i class="arrow down "></i>
-                <div className="a "></div>
+                <div className="a"></div>
               </div>
             </div>
 
