@@ -1,0 +1,28 @@
+import Image from "next/image";
+import React from "react";
+
+function Menu({ id, title, image, description }) {
+  return (
+    <div className="">
+      <div className=" grid grid-cols-2  text-center transition-transform duration-300 transform origin-bottom scale-100 hover:scale-105">
+        <Image
+          alt=""
+          src={image}
+          width={800}
+          height={300}
+          objectFit="contain"
+        />
+
+        <h3 className="top-2 right-2 text-sm italic text-gray-400">
+          {description}
+        </h3>
+      </div>
+
+      <div className="grid  grid-cols-3 text-center ">
+        <h1 className="link my-3 text-black">{title}</h1>
+      </div>
+    </div>
+  );
+}
+
+export default Menu;

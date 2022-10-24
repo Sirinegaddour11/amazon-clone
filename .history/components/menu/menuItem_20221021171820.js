@@ -1,0 +1,18 @@
+import React from "react";
+
+const MenuItem = ({ title, children }) => {
+  return (
+    <div className="drop">
+      <p className="link">{title}</p>
+      <div className="drop-content">
+        <div class="header">
+          <h2>Amazon Business</h2>
+        </div>
+        {const MenuItem = ({ title, children }) => {
+}
+      </div>
+    </div>
+  );
+};
+
+export default MenuItem;
