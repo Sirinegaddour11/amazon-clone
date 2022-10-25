@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .link {
+        @apply cursor-pointer hover:underline active:transform active:scale-90 active:no-underline;
+    }
+
+        .button {
+            @apply p-2 text-xs md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400 border border-yellow-300 rounded-sm hover:from-yellow-300 focus:outline-none focus:ring-1 focus:ring-yellow-500 active:from-yellow-500 active:transform active:scale-90;
+        }
+    
+        .growing-hover {
+            @apply transition-transform duration-300 transform origin-bottom scale-100 hover:scale-105;
+        }
+
+  
+}
+
+
+.error {
+    @apply text-xs;
+    color: rgba(255, 0, 0, 1);
+}
+/* tooltip */
+
+.tooltip {
+    @apply relative;
+}
+
+.tooltip .tooltiptext {
+    @apply rounded-md -ml-16 px-0 py-1 absolute text-center text-white invisible w-32;
+    background-color: rgba(93, 84, 84, 1);
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+}
+
+.tooltip .tooltiptext::after {
+    @apply border-transparent border-solid border-4 -ml-1 absolute;
+    content: " ";
+    bottom: 100%;
+    left: 50%;
+}
+
+.tooltip:hover .tooltiptext {
+     @apply visible;
+}
+
+.dropdown {
+    @apply relative inline-block;
+   
+}
+/* dropdown */
+
+.dropdown-content {
+    @apply hidden absolute;
+    background-color: rgba(217, 211, 211, 0.678);
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    @apply block py-3 px-4 no-underline;
+    color: rgba(196, 195, 195, 1);
+}
+
+
+.dropdown-content a:hover {
+    @apply bg-gray-200;
+}
+
+.dropdown:hover .dropdown-content {
+    @apply block;
+}
+
+.dropdown-content .header {
+    @apply bg-black p-4 text-white;
+    bottom: 10%;
+}
+
+/* dropdown */
+
+.drop-content {
+    @apply bg-white hidden absolute left-0 w-full;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.drop:hover {
+    @apply float-left overflow-hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    @apply block;
+}
+
+.drop-content .header {
+    @apply p-4 text-white;
+    background-color: rgba(252, 219, 32, 0.71);
+}
+
+/*  */
+
+.a {
+    @apply border-transparent border-8 -ml-2 absolute bottom-0;
+    content: " ";
+    right: -12%;
+    z-index: 4;
+}
+
+.b {
+    @apply border-transparent border-8 -ml-2 absolute;
+    content: " ";
+    bottom: 100%;
+    left: 380px;
+}
+
+.c {
+    @apply border-transparent border-8 -ml-2 absolute;
+    content: " ";
+    bottom: 100%;
+    left: 520px;
+}
+
+/* arrown */
+
+.arrow {
+    @apply border-white border-solid border-t-0 border-l-0 border-r-2 border-b-2 inline-block p-px relative;
+    border-width: 0px 2px 2px 0px;
+    left: 12px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
