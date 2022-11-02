@@ -1,0 +1,15 @@
+import React from "react";
+
+function MenuDropdown({ title, children }) {
+  return (
+    <div className="dropdown nav-arrow ">
+      <div className="relative flex items-center pr-4">
+        {title} <i className="arrow"></i>
+        <div className="nav-arrow-inner"></div>
+      </div>
+     
+    </div>
+  );
+}
+
+export default MenuDropdown;
