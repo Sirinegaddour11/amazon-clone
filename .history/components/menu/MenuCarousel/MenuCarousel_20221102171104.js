@@ -33,7 +33,7 @@ function MenuCarousel() {
   ];
 
   return (
-    <div className="carousel-wrapper ">
+    <div className=" carousel-wrapper ">
       <Carousel
         autoPlay
         infiniteLoop

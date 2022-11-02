@@ -3,8 +3,8 @@ import React from "react";
 
 function Menu({ id, title, image, description }) {
   return (
-    <div className="transition-transform duration-300 transform origin-bottom scale-100 hover:scale-105 z-20">
-      <div className=" text-center pt-2 pb-2">
+    <div className="transition-transform duration-100 transform origin-bottom scale-100 hover:scale-105 z-20">
+      <div className=" text-center pt-1 pb-1">
         <Image
           className=""
           alt=""

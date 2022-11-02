@@ -34,7 +34,7 @@ function MenuProduct() {
   ];
 
   return (
-    <div className="grid grid-flow-col xl:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 md:-mt-3 lg:-mt-5  mx-auto">
+    <div className="grid grid-flow-col xl:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 md:-mt-32 lg:-mt-52  mx-auto">
       {TodayDeals.slice(0, 3).map(
         ({ id, title, image, subtitle, description }) => (
           <Menu

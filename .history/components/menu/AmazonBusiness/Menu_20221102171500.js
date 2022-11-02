@@ -4,7 +4,7 @@ import React from "react";
 function Menu({ id, title, image, description }) {
   return (
     <div className="grid grid-rows-3 grid-flow-col gap-2">
-      <div className="row-span-3 text-center transition-transform duration-300 transform origin-bottom scale-100 hover:scale-105">
+      <div className="row-span-3  text-center transition-transform duration-300 transform origin-bottom scale-100 hover:scale-105">
         <Image
           alt=""
           src={image}
