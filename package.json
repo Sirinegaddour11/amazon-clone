@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.12",
+    "@heroicons/react": "^1.0.6",
     "@material-tailwind/react": "^1.2.4",
     "@reduxjs/toolkit": "^1.8.6",
     "@tailwindcss/line-clamp": "^0.4.2",
