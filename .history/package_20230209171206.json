@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-   "homepage":"http://Sirinegaddour11.github.io//amazon-clone",
+   "homepage":"http://Sirinegaddour11.github.io/fb-clone",
+
     "@heroicons/react": "^1.0.6",
     "@material-tailwind/react": "^1.2.4",
     "@reduxjs/toolkit": "^1.8.6",
