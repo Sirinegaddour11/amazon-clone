@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/alt-text */
+
 import Image from "next/image";
 import React from "react";
 import StarIcon from "@heroicons/react/solid/StarIcon";
 import MinusSmIcon from "@heroicons/react/solid/MinusSmIcon";
 import PlusIcon from "@heroicons/react/solid/PlusIcon";
-import Currency from "react-currency-formatter";
+// import Currency from "react-currency-formatter";
 import { useDispatch } from "react-redux";
 import { addToBasket, removeFromBasket } from "../../slices/basketSlice";
 function CheckoutProduct({ product }) {
@@ -46,7 +46,7 @@ function CheckoutProduct({ product }) {
             ))}
         </div>
         <p className="text-xs mt-2 line-clamp-3">{description}</p>
-        <Currency quantity={price} currency="EUR" />
+        {/* <div quantity={price} currency="EUR" /> */}
 
         {hasPrime && (
           <div className="flex items-center space-x-2">
@@ -54,7 +54,7 @@ function CheckoutProduct({ product }) {
               loading="lazy"
               className="w-12"
               src="https://links.papareact.com/fdw"
-              alt=""
+              alt="image"
             />
             <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
           </div>

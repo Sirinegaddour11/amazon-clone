@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import CheckoutProduct from "../components/Header/CheckoutProduct";
 import Header from "../components/Header/Header";
 import { selectItems, selectTotal } from "../slices/basketSlice";
-import Currency from "react-currency-formatter";
+// import Currency from "react-currency-formatter";
 
 
 function checkout() {
@@ -50,7 +50,7 @@ function checkout() {
               <h2 className="whitespace-nowrap">
                 Subtotal ({total} items):{" "}
                 <span className="font-bold">
-                  <Currency quantity={totalPrice} currency="EUR" />
+                  {/* <Currency quantity={totalPrice} currency="EUR" /> */}
                 </span>
               </h2>
               <button className=" button mt-2 from-gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed hover:from-gray-300">
